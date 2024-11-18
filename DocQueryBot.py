@@ -7,12 +7,8 @@ from langchain.chains import ConversationalRetrievalChain
 from transformers import pipeline, AutoTokenizer
 from langchain.memory import ConversationBufferMemory
 import torch 
-import os
 import gradio as gr
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
-
-api_key = os.getenv("HF_API_KEY")
-login(api_key)
 
 chat_history = [
     {"role": "system", "content": "Provide answers strictly based on the document content. If the requested information is not found in the document, respond that the information is not available in the document. Do not generate or assume answers outside of the document's contents. Answer only with information directly found in the document."}
