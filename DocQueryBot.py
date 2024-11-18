@@ -108,4 +108,4 @@ with gr.Blocks() as demo:
     user_input.submit(chatbot_interface, inputs=[file, user_input, chat_history], outputs=[chatbot, chat_history])
 
 # Launch the Gradio app
-demo.launch()
+demo.launch(server_name="0.0.0.0", server_port=8080)
