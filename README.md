@@ -1,4 +1,4 @@
-# DocuQueryBot  
+# DocQueryBot  
 
 ## Overview  
 DocuQueryBot is a conversational AI chatbot that allows users to upload PDF documents and query their contents. The chatbot ensures that answers are strictly based on the document content and avoids generating or assuming answers outside the document's scope.  
